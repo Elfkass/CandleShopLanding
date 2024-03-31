@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.intro-image {
+    background-attachment: fixed;
+    background-image: url('../img/finished\ canldes.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-image__text {
+    animation: textLeft;
+    animation-duration: 3s;
+    position: relative;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes textLeft {
+    0% {left: -1000px;}
+    85% {left: 50px;}
+    100% {left: 0;}
+}
+
+.intro-image__text a {
+    border: 2px solid silver;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    padding: 1rem;
+    transition: all 0.3s;
+}
+
+.intro-image__text a:hover {
+    box-shadow: 0 1rem 2rem rgb(0, 0, 0);
+    background-color: rgba(101, 160, 236, 0.511);
+    transform: translateY(-5px);
+    transform: scale(1.1);
+}
+
+.intro-image__text a:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: translateY(5px);
+}
+
+.intro-text {
+    clip-path: polygon(30% 0, 70% 0, 100% 21%, 100% 80%, 70% 100%, 30% 100%, 0 80%, 0 20%);
+    margin-top: -5rem;
+    margin-bottom: -5rem;
+    height: 400px;
+    background-color: lightseagreen;
+    color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-text__textbox h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.packaging-image {
+    background-attachment: fixed;
+    background-image: url('../img/package.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.packaging-image__text {
+    text-align: right;
+    animation: textRigth;
+    animation-duration: 3s;
+    position: relative;
+}
+
+@keyframes textRigth {
+    0% {right: -1000px;}
+    85% {right: 50px;}
+    100% {right: 0;}
+}
+
+.packaging-image__text a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.75rem;
+    text-transform: uppercase;
+    background-color: rgba(255, 228, 196, 0.534);
+    padding: 2rem;
+    color:#001c1f;
+    border: 2px solid #9e3e18df;
+    transition: all 0.5s ease-in-out;
+}
+
+.packaging-image__text a:hover {
+    box-shadow: 0 1rem 2rem rgb(0, 0, 0);
+    transform: translateY(-5px);
+    transform: scale(1.1);    
+}
+
+.packaging-image__text a:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: translateY(5px);
+}
+
+.packaging-text {
+    clip-path: polygon(30% 0, 70% 0, 100% 21%, 100% 80%, 70% 100%, 30% 100%, 0 80%, 0 20%);
+    margin-top: -5rem;
+    margin-bottom: -5rem;
+    height: 400px;
+    background-color: darkgreen;
+    color: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20rem;
+}
+
+.packaging_text__textbox h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.tutorials-image {
+    background-attachment: fixed;
+    background-image: url('../img/ingredients.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tutorials-image__text {
+    animation-name: button;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes button {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.tutorials-image__text a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.75rem;
+    text-transform: uppercase;
+    background-color: rgba(128, 128, 128, 0.425);
+    padding: 2rem;
+    color: bisque;
+    border: 2px solid grey;
+    transition: all 0.5s ease-in-out;
+}
+
+.tutorials-image__text a:hover {
+    box-shadow: 0 1rem 2rem rgb(0, 0, 0);
+    transform: translateY(-5px);
+    transform: scale(1.1);  
+}
+
+.tutorials-image__text a:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: translateY(5px);
+}
+
+.footer {
+    height: 250px;
+    background-color: #9b4c03;
+    color: black;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.footer ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer ul li:hover {
+    transform: scale(1.1);
+}
+
+.wrapper a:hover {
+    color: blanchedalmond;
+}
